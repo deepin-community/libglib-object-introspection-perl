@@ -1,0 +1,325 @@
+libglib-object-introspection-perl (0.049-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:45:06 +0800
+
+libglib-object-introspection-perl (0.049-1) unstable; urgency=medium
+
+  * Team upload.
+  * Update 'DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow' to '=+all'.
+  * Import upstream version 0.049.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 25 Oct 2020 00:28:04 +0200
+
+libglib-object-introspection-perl (0.048-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set fields Upstream-Name, Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * Tighten versioned build dependencies on libffi-dev and
+    libgirepository1.0-dev.
+    Thanks to Simon McVittie for the bug report. (Closes: #950218)
+  * Declare compliance with Debian Policy 4.5.0.
+  * Update Build-Depends for cross builds.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * debian/watch: use uscan version 4.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 30 Jan 2020 13:21:47 +0100
+
+libglib-object-introspection-perl (0.048-1) unstable; urgency=medium
+
+  * Import new upstream release.
+  * Stop versioning build-dependency that's satisfied on oldstable.
+  * Bump debhelper compat level to 12 and switch to debhelper-compat.
+  * Reformat long description to avoid
+    possible-unindented-list-in-extended-description.
+  * Declare compliance with Policy 4.4.1.
+  * Declare that debian/rules does not require root privileges.
+  * Add build-dependency on gir1.2-poppler-0.18 to run more upstream tests.
+
+ -- intrigeri <intrigeri@debian.org>  Wed, 11 Dec 2019 06:05:07 +0000
+
+libglib-object-introspection-perl (0.047-1) unstable; urgency=medium
+
+  * Import new upstream release.
+
+ -- intrigeri <intrigeri@debian.org>  Tue, 05 Feb 2019 10:15:28 +0000
+
+libglib-object-introspection-perl (0.046-1) unstable; urgency=medium
+
+  * Import new upstream release.
+  * Declare compliance with policy 4.2.1.
+  * Bump debhelper compatibility level to 11.
+
+ -- intrigeri <intrigeri@debian.org>  Sun, 21 Oct 2018 10:25:39 +0000
+
+libglib-object-introspection-perl (0.045-1) unstable; urgency=medium
+
+  [ oldtechaa ]
+  * Document that the base library devel packages must be installed.
+    (Closes: #891339)
+  * Add libxml-libxml-perl to Suggests, needed for perli11ndoc.
+    (Closes: #891334)
+
+  [ intrigeri ]
+  * Import new upstream release.
+  * Update upstream repo location.
+  * Declare compliance with Standards-Version 4.1.4.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 25 May 2018 07:47:09 +0000
+
+libglib-object-introspection-perl (0.044-2) unstable; urgency=medium
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ intrigeri ]
+  * Drop runtime dependency on libextutils-depends-perl
+    and libextutils-pkgconfig-perl (Closes: #891891).
+  * Update Lintian overrides wrt. renamed tag.
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 03 Mar 2018 07:02:15 +0000
+
+libglib-object-introspection-perl (0.044-1) unstable; urgency=medium
+
+  * Team upload
+
+  * New upstream version 0.044
+  * declare conformance with Policy 4.1.1 (no changes needed)
+
+ -- Damyan Ivanov <dmn@debian.org>  Sat, 11 Nov 2017 19:34:00 +0000
+
+libglib-object-introspection-perl (0.043-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * autopkgtests: build test libraries before running smoke test.
+    (Closes: #865725)
+
+  [ intrigeri ]
+  * Declare compliance with Standards-Version 4.0.0 (no change required).
+  * Bump debhelper compatibility level to 10,
+    adjust build-dependencies accordingly.
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 24 Jun 2017 13:52:59 +0000
+
+libglib-object-introspection-perl (0.043-1) unstable; urgency=medium
+
+  * Import new upstream release.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 23 Jun 2017 18:38:30 +0000
+
+libglib-object-introspection-perl (0.042-1) unstable; urgency=medium
+
+  * Import new upstream release.
+  * Drop Fix-occuring-typo-in-POD.patch: applied upstream.
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 24 Dec 2016 08:32:08 +0000
+
+libglib-object-introspection-perl (0.041-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+
+  [ intrigeri ]
+  * Import new upstream release.
+  * Bump Standards-Version to 3.9.8: no change required.
+  * Fix-occuring-typo-in-POD.patch: new patch.
+
+ -- intrigeri <intrigeri@debian.org>  Sun, 27 Nov 2016 09:32:57 +0000
+
+libglib-object-introspection-perl (0.040-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 02 Jan 2016 20:42:14 +0000
+
+libglib-object-introspection-perl (0.040-1) experimental; urgency=medium
+
+  [ intrigeri ]
+  * debian/upstream/metadata: correct bug submission email address.
+  * Import new upstream release.
+  * Bump {build,run}-time dependency on libglib-perl to >= 3:1.320.
+  * Mark as autopkgtest-able.
+
+  [ Axel Beckert ]
+  * debian/upstream/metadata: Deobfuscate upstream contact address
+
+ -- intrigeri <intrigeri@debian.org>  Tue, 29 Dec 2015 18:52:30 +0000
+
+libglib-object-introspection-perl (0.028-2) unstable; urgency=medium
+
+  * Bump copyright years for debian/*.
+  * Upload to unstable.
+
+ -- intrigeri <intrigeri@debian.org>  Mon, 27 Apr 2015 11:05:19 +0200
+
+libglib-object-introspection-perl (0.028-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 13 Mar 2015 12:32:07 +0100
+
+libglib-object-introspection-perl (0.025-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Declare compliance with Standards-Version 3.9.6 (no change needed).
+  * Bump versioned build-dependency on gobject-introspection
+    to >= 1.42.0-2.2, that fixes #764272.
+
+ -- intrigeri <intrigeri@debian.org>  Wed, 22 Oct 2014 09:03:22 +0200
+
+libglib-object-introspection-perl (0.024-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ intrigeri ]
+  * Have ExtUtils::MakeMaker generate a Makefile that echoes all commands run,
+    so that blhc can do its job.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 29 Aug 2014 14:55:03 -0700
+
+libglib-object-introspection-perl (0.024-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Run tests under C.UTF-8 locale.
+  * Replace non-existant libcairo-dev with libcairo2-dev in Build-Depends.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 10 Jul 2014 18:25:56 +0200
+
+libglib-object-introspection-perl (0.023-1) unstable; urgency=medium
+
+  * Team upload
+
+  * Imported Upstream version 0.023
+    + drop Fix-return-value-handling-on-big-endian-architecture.patch,
+      applied upstream
+
+ -- Damyan Ivanov <dmn@debian.org>  Thu, 22 May 2014 22:13:03 +0300
+
+libglib-object-introspection-perl (0.022-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update upstream copyright years.
+
+ -- intrigeri <intrigeri@debian.org>  Wed, 26 Mar 2014 10:39:36 +0100
+
+libglib-object-introspection-perl (0.020-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ intrigeri ]
+  * Add debian/upstream/metadata
+  * New patch
+    (0001-Fix-return-value-handling-on-big-endian-architecture.patch)
+    proposed by upstream. This should fix #724469 at least on 32-bit
+    big-endian architectures.
+
+ -- intrigeri <intrigeri@debian.org>  Thu, 27 Feb 2014 22:36:03 +0100
+
+libglib-object-introspection-perl (0.020-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 21 Feb 2014 10:48:53 +0100
+
+libglib-object-introspection-perl (0.019-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 24 Jan 2014 17:33:35 +0100
+
+libglib-object-introspection-perl (0.018-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Declare compliance with Standards-Version 3.9.5.
+  * Add a Lintian override for debian-watch-may-check-gpg-signature.
+    Upstream does not provide detached signatures, but they sign Git tags,
+    and we (well, at least I) verify it and compare to the imported tarball
+    content before uploading to Debian.
+  * Build-depend on debhelper (>= 9.20120312~) to get better hardening
+    flags support.
+
+ -- intrigeri <intrigeri@debian.org>  Wed, 08 Jan 2014 13:33:23 +0100
+
+libglib-object-introspection-perl (0.016-1) unstable; urgency=low
+
+  * New upstream release.
+  * Declare runtime dependency on libextutils-depends-perl and
+    libextutils-pkgconfig-perl.
+  * Take into account upstream copyright years bump.
+
+ -- intrigeri <intrigeri@debian.org>  Tue, 01 Oct 2013 15:52:53 +0200
+
+libglib-object-introspection-perl (0.015-1) unstable; urgency=low
+
+  [ Upstream ]
+  * Unstable release 0.015
+
+  [ intrigeri ]
+  * Drop obsolete Lintian override.
+
+ -- intrigeri <intrigeri@debian.org>  Thu, 05 Sep 2013 07:14:01 +0200
+
+libglib-object-introspection-perl (0.014-2) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.4 (no change required).
+  * Upload to unstable.
+
+ -- intrigeri <intrigeri@debian.org>  Mon, 10 Jun 2013 18:03:17 +0200
+
+libglib-object-introspection-perl (0.014-1) experimental; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ intrigeri ]
+  * Imported Upstream version 0.014
+  * Add build-dependency on libffi-dev.
+  * Add build-dependency on libcairo-gobject-perl so that the upstream
+    test suite can be run entirely.
+  * Version build-time and runtime dependency on libglib-perl (>= 3:1.280).
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 09 Feb 2013 11:54:49 +0100
+
+libglib-object-introspection-perl (0.010-1) experimental; urgency=low
+
+  * Imported Upstream version 0.010
+
+ -- intrigeri <intrigeri@debian.org>  Mon, 09 Jul 2012 00:23:32 -0600
+
+libglib-object-introspection-perl (0.009-1) unstable; urgency=low
+
+  * Imported Upstream version 0.009
+  * Override hardening-no-fortify-functions Lintian warning.
+
+ -- intrigeri <intrigeri@debian.org>  Thu, 24 May 2012 09:13:54 +0200
+
+libglib-object-introspection-perl (0.008-1) unstable; urgency=low
+
+  * Imported Upstream version 0.008
+
+ -- intrigeri <intrigeri@debian.org>  Sun, 29 Apr 2012 17:40:59 +0200
+
+libglib-object-introspection-perl (0.007-1) unstable; urgency=low
+
+  * Initial release (Closes: #653442).
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 07 Apr 2012 10:07:02 +0200
